@@ -10,6 +10,7 @@ class CONTACTFORM(forms.ModelForm):
         exclude = ['created']
         widgets={
             'name': forms.TextInput(attrs={'class':"form-control"}),
+            'subject': forms.TextInput(attrs={'class':"form-control"}),
             'email': forms.TextInput(attrs={'class':"form-control"}),
             'messagess': forms.TextInput(attrs={'class':"form-control"}),
             
